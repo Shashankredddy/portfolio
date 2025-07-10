@@ -1,0 +1,40 @@
+.particle-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  cursor: none;
+}
+
+.particle-background.loaded {
+  opacity: 1;
+}
+
+/* Ensure canvas is properly sized */
+.particle-background {
+  display: block;
+}
+
+/* Dark theme enhancements */
+[data-theme="dark"] .particle-background {
+  filter: brightness(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .particle-background {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle-background {
+    animation: none;
+  }
+}

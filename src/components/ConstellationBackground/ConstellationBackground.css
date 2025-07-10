@@ -1,0 +1,28 @@
+.constellation-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, rgba(25, 25, 112, 0.03) 0%, transparent 70%);
+}
+
+/* Dark theme */
+[data-theme="dark"] .constellation-background {
+  background: radial-gradient(ellipse at center, rgba(75, 0, 130, 0.08) 0%, transparent 70%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .constellation-background {
+    opacity: 0.6;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .constellation-background {
+    animation: none;
+  }
+}

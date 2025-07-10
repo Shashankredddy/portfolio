@@ -1,0 +1,172 @@
+.geometric-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.geometric-shapes {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.shape {
+  position: absolute;
+  opacity: 0.1;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Circles */
+.circle-1 {
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 50%;
+  top: 10%;
+  left: 15%;
+  animation-delay: 0s;
+}
+
+.circle-2 {
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, rgba(102, 126, 234, 0.05) 100%);
+  border-radius: 50%;
+  top: 60%;
+  right: 20%;
+  animation-delay: 1s;
+}
+
+.circle-3 {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, rgba(255, 215, 0, 0.1) 0%, rgba(255, 215, 0, 0.05) 100%);
+  border-radius: 50%;
+  bottom: 20%;
+  left: 25%;
+  animation-delay: 2s;
+}
+
+.circle-4 {
+  width: 120px;
+  height: 120px;
+  background: radial-gradient(circle, rgba(118, 75, 162, 0.1) 0%, rgba(118, 75, 162, 0.05) 100%);
+  border-radius: 50%;
+  top: 30%;
+  right: 10%;
+  animation-delay: 3s;
+}
+
+.circle-5 {
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(255, 140, 0, 0.1) 0%, rgba(255, 140, 0, 0.05) 100%);
+  border-radius: 50%;
+  bottom: 40%;
+  right: 40%;
+  animation-delay: 4s;
+}
+
+/* Hexagons */
+.hexagon-1 {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.08);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  top: 20%;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.hexagon-2 {
+  width: 80px;
+  height: 80px;
+  background: rgba(102, 126, 234, 0.08);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  bottom: 30%;
+  left: 70%;
+  animation-delay: 2.5s;
+}
+
+/* Triangles */
+.triangle-1 {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid rgba(255, 215, 0, 0.08);
+  top: 50%;
+  left: 10%;
+  animation-delay: 3.5s;
+}
+
+.triangle-2 {
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 60px solid rgba(118, 75, 162, 0.08);
+  top: 70%;
+  right: 15%;
+  animation-delay: 4.5s;
+}
+
+/* Squares */
+.square-1 {
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.06);
+  transform: rotate(45deg);
+  top: 40%;
+  left: 40%;
+  animation-delay: 0.5s;
+}
+
+.square-2 {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 140, 0, 0.06);
+  transform: rotate(45deg);
+  bottom: 50%;
+  right: 30%;
+  animation-delay: 1.5s;
+}
+
+/* Animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(180deg);
+  }
+}
+
+/* Dark theme adjustments */
+[data-theme="dark"] .shape {
+  opacity: 0.15;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .shape {
+    opacity: 0.05;
+  }
+  
+  .circle-1,
+  .circle-2,
+  .circle-3,
+  .circle-4,
+  .circle-5 {
+    transform: scale(0.7);
+  }
+  
+  .hexagon-1,
+  .hexagon-2 {
+    transform: scale(0.8);
+  }
+}
