@@ -1,4 +1,5 @@
 # Shashank Reddy Pasham - Portfolio Website
+https://shashankredddy.github.io/shashankPasham.github.io/
 
 A modern, responsive portfolio website built with React, TypeScript, and Vite showcasing the professional profile of Shashank Reddy Pasham, Software Engineer and Machine Learning Engineer.
 
@@ -8,7 +9,7 @@ A modern, responsive portfolio website built with React, TypeScript, and Vite sh
 - **Background**: BTech in Computer Science from Chennai Institute of Technology (June 2017 - May 2021)
 - **Experience**: Software Engineer and Machine Learning Engineer from Hyderabad, India
 - **Location**: Tampa, Florida
-- **Contact**: reddypasham2@gmail.com | +1 813 724 5955
+- **Contact**: reddypasham01@gmail.com | +1 813 724 5955
 
 ## Key Skills & Technologies
 
