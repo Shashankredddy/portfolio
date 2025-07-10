@@ -10,6 +10,16 @@ export interface Project {
   category: string;
 }
 
+// Achievement interface
+export interface Achievement {
+  id: string;
+  title: string;
+  description: string;
+  date: string;
+  organization: string;
+  imageUrl?: string;
+}
+
 // Training/Education interface
 export interface Training {
   id: string;
