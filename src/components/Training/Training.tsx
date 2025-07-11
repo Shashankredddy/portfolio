@@ -38,7 +38,7 @@ const TrainingComponent: React.FC = () => {
   ];
 
   return (
-    <section id="training" className="training">
+    <section id="education" className="training">
       <div className="training-container">
         <div className="section-header">
           <h2>Education</h2>

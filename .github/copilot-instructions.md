@@ -20,7 +20,7 @@ This is a React TypeScript portfolio website project built with Vite. The projec
 - **Home**: Landing section with hero content
 - **About**: Personal information and bio
 - **Portfolio**: Projects showcase with filtering
-- **Experience**: Education and work experience history
+- **Training**: Education and training history
 - **Contact**: Contact form and information
 - **Footer**: Footer with social links
 - **Social**: Social media integration

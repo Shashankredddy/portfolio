@@ -86,6 +86,25 @@ const About: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
+  // Separate useEffect for handling tab change events
+  useEffect(() => {
+    const handleTabChange = (
+      event: CustomEvent<"about" | "experience" | "skills">
+    ) => {
+      console.log("Tab change event received:", event.detail);
+      setActiveTab(event.detail);
+    };
+
+    window.addEventListener("setAboutTab", handleTabChange as EventListener);
+
+    return () => {
+      window.removeEventListener(
+        "setAboutTab",
+        handleTabChange as EventListener
+      );
+    };
+  }, []);
+
   return (
     <section id="about" className="about" ref={aboutRef}>
       <div className="about-container">
@@ -119,7 +138,7 @@ const About: React.FC = () => {
           </div>
 
           {activeTab === "about" && (
-            <div className="tab-content about-tab">
+            <div className="tab-content about-tab" id="about-me">
               <div className="about-text">
                 <h3>Software Engineer</h3>
                 <p>
@@ -155,7 +174,7 @@ const About: React.FC = () => {
           )}
 
           {activeTab === "skills" && (
-            <div className="tab-content skills-tab">
+            <div className="tab-content skills-tab" id="technical-skills">
               <div className="skills-section">
                 <h3>Technical Skills</h3>
                 <div className="skills-grid">
@@ -185,7 +204,7 @@ const About: React.FC = () => {
           )}
 
           {activeTab === "experience" && (
-            <div className="tab-content experience-tab">
+            <div className="tab-content experience-tab" id="experience">
               <div className="experience-section">
                 <h3>Professional Experience</h3>
                 <div className="experience-timeline">

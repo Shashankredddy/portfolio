@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import type { ContactInfo } from "../../types";
+import githubIcon from "../../assets/images/github.png";
+import linkedinIcon from "../../assets/images/linkedin.png";
+import twitterIcon from "../../assets/images/twitter.png";
 import "./Contact.css";
 
 interface FormData {
@@ -143,22 +146,36 @@ const Contact: React.FC = () => {
                   href={contactInfo.linkedin}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="social-link"
+                  title="LinkedIn"
                 >
-                  LinkedIn
+                  <img
+                    src={linkedinIcon}
+                    alt="LinkedIn"
+                    className="social-icon"
+                  />
                 </a>
                 <a
                   href={contactInfo.github}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="social-link"
+                  title="GitHub"
                 >
-                  GitHub
+                  <img src={githubIcon} alt="GitHub" className="social-icon" />
                 </a>
                 <a
                   href={contactInfo.twitter}
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="social-link"
+                  title="Twitter"
                 >
-                  Twitter
+                  <img
+                    src={twitterIcon}
+                    alt="Twitter"
+                    className="social-icon"
+                  />
                 </a>
               </div>
             </div>

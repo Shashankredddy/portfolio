@@ -239,13 +239,20 @@
 }
 
 /* Responsive design */
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .home-container {
     gap: 6rem;
+    padding-left: 8rem; /* Extra left padding for social icons on large screens */
   }
   
   .home-content {
     max-width: 650px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  .home-container {
+    padding-left: 6rem; /* Reduced padding for tablets */
   }
 }
 
@@ -255,6 +262,7 @@
     justify-content: center;
     text-align: center;
     gap: 2rem;
+    padding: 0 2rem; /* Reset padding since social icons are hidden */
   }
   
   .home-content {

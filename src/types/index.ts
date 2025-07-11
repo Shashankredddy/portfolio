@@ -45,6 +45,14 @@ export interface NavItem {
   label: string;
   href: string;
   isActive?: boolean;
+  dropdown?: NavDropdownItem[];
+}
+
+// Navigation dropdown item interface
+export interface NavDropdownItem {
+  label: string;
+  href: string;
+  action?: () => void;
 }
 
 // Skill interface

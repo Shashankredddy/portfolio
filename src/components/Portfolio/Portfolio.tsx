@@ -57,10 +57,10 @@ const Portfolio: React.FC = () => {
   ];
 
   return (
-    <section id="portfolio" className="portfolio">
+    <section id="projects" className="portfolio">
       <div className="portfolio-container">
         <div className="section-header">
-          <h2>My Portfolio</h2>
+          <h2>My Projects</h2>
           <p>Here are some of my recent projects</p>
         </div>
 
