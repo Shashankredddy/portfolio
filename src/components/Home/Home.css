@@ -42,7 +42,7 @@
 }
 
 .home-content {
-  animation: fadeInUp 1s ease, float 6s ease-in-out infinite;
+  animation: fadeInUp 1s ease;
   position: relative;
   z-index: 4;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
@@ -50,36 +50,17 @@
   width: 100%;
 }
 
-.home-title {
-  font-size: 3rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
 .highlight {
   color: #ffd700;
   position: relative;
 }
 
-.home-title .highlight {
-  animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
-  }
-  to {
-    text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700;
-  }
-}
-
 .home-subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
+  font-size: 2.5rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
-  color: #e0e0e0;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
 }
 
 .home-description {
@@ -275,12 +256,8 @@
     order: -1;
   }
   
-  .home-title {
-    font-size: 2.5rem;
-  }
-  
   .home-subtitle {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
   
   .home-buttons {
@@ -298,8 +275,8 @@
     padding: 0 1rem;
   }
   
-  .home-title {
-    font-size: 2rem;
+  .home-subtitle {
+    font-size: 1.5rem;
   }
   
   .home-buttons {

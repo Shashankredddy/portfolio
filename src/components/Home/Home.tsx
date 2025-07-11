@@ -16,9 +16,6 @@ const Home: React.FC = () => {
         <GeometricBackground />
         <ParticleBackground />
         <div className="home-content">
-          <h1 className="home-title">
-            Hi, I'm <span className="highlight">Shashank Reddy Pasham</span>
-          </h1>
           <p className="home-subtitle">
             <span className="typewriter-text">
               {typewriterText}
