@@ -53,7 +53,7 @@ const About: React.FC = () => {
     },
     {
       id: "2",
-      title: "Smart Internz (ML Intern)",
+      title: "Smartbridge (ML Intern)",
       institution: "Hyderabad, India",
       duration: "June 2020 - July 2020",
       description:
