@@ -32,7 +32,7 @@ const Home: React.FC = () => {
               className="btn btn-primary"
               onClick={() => {
                 window.open(
-                  "https://drive.google.com/file/d/1v2f6zvcb_nqmwM4aHJLFVFVH9xKjre2K/view?usp=drive_link",
+                  "https://drive.google.com/file/d/1BJBPYrVp1MVAN-7RXEjONjzB1J-yGAIq/view?usp=sharing",
                   "_blank"
                 );
               }}
